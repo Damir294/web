@@ -1,13 +1,15 @@
 package model;
 
 import lombok.Data;
-        import lombok.NonNull;
+import lombok.NoArgsConstructor;
+import lombok.NonNull;
 
-        import java.awt.*;
-        import java.util.ArrayList;
-        import java.util.List;
+import java.awt.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Data
+@NoArgsConstructor
 public class Recipe {
     @NonNull
     private String title;

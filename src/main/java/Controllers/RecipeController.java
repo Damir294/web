@@ -1,4 +1,5 @@
 package Controllers;
+
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.ArraySchema;
 import io.swagger.v3.oas.annotations.media.Content;
@@ -48,7 +49,6 @@ public class RecipeController {
         int id = recipeService.addRecipe(recipe);
         return ResponseEntity.ok().body(id);
     }
-
     @GetMapping("/{id}")
     @Operation(
             summary = "Получение рецепта по id"
